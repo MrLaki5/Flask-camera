@@ -1,5 +1,12 @@
+# Flask Camera
+Simple Flask server with camera stream
+
 ## Build
-docker build . -t ip-camera
+```
+docker build . -t flask-camera
+```
 
 ## Run
-docker run -d --restart always --device /dev/video0 -p 5000 --name ip-camera-container ip-camera
+```
+docker run -d --restart always --device /dev/video0 -p 5000 --name flask-camera-container flask-camera
+```
