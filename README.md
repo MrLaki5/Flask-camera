@@ -1,5 +1,6 @@
 # Flask Camera
 Simple Flask server with camera stream
+<img src="img/app.png" width="400"/>
 
 ## Build
 ```
