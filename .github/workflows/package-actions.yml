@@ -1,0 +1,16 @@
+name: package-actions
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+jobs:
+  package-docker-image:
+    runs-on: ubuntu-20.04
+    steps:
+      # Build and docker image
+      - name: Build docker image
+        run: |
+          docker build . -t ghcr.io/mrlaki5/flask-camera:latest
