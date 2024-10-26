@@ -16,7 +16,11 @@ docker pull ghcr.io/mrlaki5/flask-camera:latest
 ### Start container with server inside
 Camera mount is epxected to be on the path `/dev/video0`, you can change it in the command below
 ```
-docker run --rm --device /dev/video0 -p 5000:5000 --name flask-camera-container ghcr.io/mrlaki5/flask-camera:latest
+docker run --rm \
+           --device /dev/video0 \
+           -p 5000:5000 \
+           --name flask-camera-container \
+           ghcr.io/mrlaki5/flask-camera:latest
 ```
 
 ### Accessing the page
